@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from xgboost import XGBClassifier
-from sklearn.metrics import accuracy_score
 
 assign2_df_train = pd.read_csv('assignment2train.csv')
 
