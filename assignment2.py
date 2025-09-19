@@ -18,3 +18,7 @@ model = XGBClassifier(n_estimators=50, max_depth=3, learning_rate=0.5, objective
 modelFit = model.fit(X, Y)
 
 pred = modelFit.predict(xt)
+
+pred = np.array(pred)
+
+pred = np.round(pred).astype(float)
