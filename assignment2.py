@@ -12,7 +12,7 @@ xt = assign2_df_test.drop(columns=['meal','id','DateTime'])
 
 num_classes_train = len(np.unique(Y))
 
-model = XGBClassifier(n_estimators=50, max_depth=3, learning_rate=0.5, objective='multi:softmax', num_class=num_classes_train)
+model = XGBClassifier(n_estimators=100, max_depth=5, learning_rate=0.5, objective='multi:softmax', num_class=num_classes_train)
 
 modelFit = model.fit(X, Y)
 
